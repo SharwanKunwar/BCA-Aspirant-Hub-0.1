@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+
+:root{
+  width: 100vw;
+  /* background-color: white; */
+  overflow-x: hidden;
+}

@@ -1,0 +1,44 @@
+/* Define the floating animation */
+@import 'tailwindcss';
+
+@keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Apply the floating effect to elements with a specific class */
+  #floating-1, #floating-2, #floating-3, #floating-4, #floating-5, #floating-6 {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  #floating-1 {
+    animation-delay: 0s;
+  }
+  #floating-2 {
+    animation-delay: 0.2s;
+  }
+  #floating-3 {
+    animation-delay: 0.4s;
+  }
+  #floating-4 {
+    animation-delay: 0.6s;
+  }
+  #floating-5 {
+    animation-delay: 0.8s;
+  }
+  #floating-6 {
+    animation-delay: 1s;
+  }
+  
