@@ -2,8 +2,8 @@ import React from 'react'
 
 function Semister() {
   return (
-    <div>
-      this is semister page
+    <div className='flex justify-center items-center bg-sky-300 w-screen h-screen'>
+      This is semister page
     </div>
   )
 }
