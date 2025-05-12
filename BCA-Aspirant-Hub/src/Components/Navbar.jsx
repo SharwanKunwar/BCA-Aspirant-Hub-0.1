@@ -2,9 +2,15 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
+  const style01 = {
+  borderWidth: "0.5px",
+  borderStyle: "solid",
+  borderColor: "#ccc",
+};
+
   return (
-    <div className="w-screen sm:h-[90px] h-[80px] flex justify-center items-center sm:pl-10 sm:pr-10 fixed bg-white z-50 shadow-md">
-      <nav className="bg-white sm:border-1 sm:rounded-2xl w-screen h-[60px] flex justify-around items-center gap-5 ">
+    <div className="w-screen sm:h-[90px] h-[80px] flex justify-center items-center sm:pl-10 sm:pr-10 fixed bg-white z-50 ">
+      <nav className="sm:bg-gray-100 sm:rounded-2xl w-screen h-[60px] flex justify-around items-center gap-5 sm:shadow-md">
 
         {/* Logo Section */}
         <div className="sm:w-[10%] w-[30%] h-full flex justify-center items-center">

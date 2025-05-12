@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router';
 
+
 const Button = ({ variant, className, children }) => {
   const baseStyle = 'px-4 py-2 rounded-lg font-semibold ';
   const variants = {
@@ -67,7 +68,7 @@ const Intro = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-50 p-4 flex flex-col sm:flex-row sm:gap-0 sm:justify-center justify-end items-center">
+    <div id='intro-outer' className="min-h-screen bg-red-400 p-4 flex flex-col sm:flex-row sm:gap-0 sm:justify-center justify-center items-center">
       <header className="text-center py-8 sm:w-6/16">
         <h1 className="text-4xl font-bold text-blue-60 sm:flex">BCA Aspirant</h1>
         {/* Add the reference to the <p> tag */}
@@ -92,8 +93,7 @@ const Intro = () => {
           </Card>
         </motion.div>
       </main>
-
-      <section className="w-[90%] sm:h-[40%] h-[25%] flex justify-center sm:items-center items-start gap-10 sm:hidden mt-10 mb-10">
+      <section className=" w-[90%] sm:h-[40%] flex justify-center sm:items-center items-start gap-10 sm:hidden mt-10 ">
         <a href="https://www.facebook.com/messenger" target="_blank" rel="noopener noreferrer">
           <button className="w-[40px] h-[40px] bg-blue-600 text-white rounded-full p-3 flex items-center justify-center">
             <i className="ri-facebook-circle-fill text-2xl"></i>

@@ -102,7 +102,7 @@ function Home() {
 
 
       {/* Floating Divs */}
-      <div className="bg-white text-red-600 w-[90%] sm:h-[22%] hidden rounded-t-2xl overflow-hidden sm:flex justify-around items-center z-10">
+      <div className="bg-white/20 backdrop-blur-sm text-red-600 w-[90%] sm:h-[22%] hidden rounded-t-2xl sm:flex justify-around items-center z-10 shadow-lg border border-white/20">
         <section className="flex justify-around absolute bottom-10 w-[90%]">
           <div id="floating-1" className="flex justify-center items-center"></div>
           <div id="floating-2" className="flex justify-center items-center"></div>
