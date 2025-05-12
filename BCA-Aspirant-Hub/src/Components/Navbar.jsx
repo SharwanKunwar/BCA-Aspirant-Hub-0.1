@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import NavMenuToggle from "./NavMenuToggle";
 
 function Navbar() {
   const style01 = {
@@ -23,7 +24,7 @@ function Navbar() {
           </div>
           <div className="sm:hidden block">
             <NavLink to="/">
-              <img src="./src/assets/react.svg" alt="logo" />
+              <img className='sm:w-[60px] w-[50px]' src="/graduation-hat.png" alt="logo" />
             </NavLink>
           </div>
         </div>
@@ -31,7 +32,7 @@ function Navbar() {
         {/* Menu List Section */}
         <div className="sm:w-[60%] w-[80%] h-full">
           <ul className=" sm:flex sm:justify-start sm:items-center sm:gap-10 w-full h-full hidden">
-            {["home", "notes", "semister"].map((item) => (
+            {["home", "notes", "semister","projects","blogs"].map((item) => (
               <li key={item} className="list-none">
                 <NavLink
                   to={item}
@@ -66,9 +67,9 @@ function Navbar() {
           </div>
 
           {/* Menu Icon (Mobile) */}
-          <div className="sm:hidden block">
+          <div className=" sm:hidden w-full h-full flex justify-center items-center">
             <NavLink to="#">
-              <img src="./src/assets/react.svg" alt="Menu-icon" />
+              <NavMenuToggle/>
             </NavLink>
           </div>
         </div>

@@ -7,6 +7,8 @@ import MainPage from './Home/MainPage.jsx';
 import Notes from './Home/Notes.jsx';
 import Semister from './Home/Semister.jsx';
 import Intro from './Components/Intro.jsx';
+import Projects from './Home/Projects.jsx';
+import Blogs from './Home/Blogs.jsx';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,14 @@ const router = createBrowserRouter([
       {
         path: 'semister',  // Relative path, no leading /
         element: <Semister />
+      },
+      {
+        path: 'projects',
+        element: <Projects/>
+      },
+      {
+        path: 'blogs',
+        element: <Blogs/>
       }
     ]
   }
