@@ -68,7 +68,7 @@ const Intro = () => {
   }, []);
 
   return (
-    <div id='intro-outer' className="min-h-screen bg-red-400 p-4 flex flex-col sm:flex-row sm:gap-0 sm:justify-center justify-center items-center">
+    <div id='intro-outer' className="min-h-screen bg-gray-50 p-4 flex flex-col sm:flex-row sm:gap-0 sm:justify-center justify-center items-center">
       <header className="text-center py-8 sm:w-6/16">
         <h1 className="text-4xl font-bold text-blue-60 sm:flex">BCA Aspirant</h1>
         {/* Add the reference to the <p> tag */}
