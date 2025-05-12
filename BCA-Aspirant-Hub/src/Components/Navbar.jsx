@@ -10,11 +10,11 @@ function Navbar() {
 };
 
   return (
-    <div className="w-screen sm:h-[90px] h-[80px] flex justify-center items-center sm:pl-10 sm:pr-10 fixed sm:bg-white bg-gray-50 z-50 ">
+    <div className="w-screen sm:h-[90px] h-[80px] flex justify-center items-center sm:pl-10 sm:pr-10 fixed sm:bg-white bg-gray-100 z-50">
       <nav className="sm:bg-gray-100 sm:rounded-2xl w-screen h-[60px] flex justify-around items-center gap-5 sm:shadow-md">
 
         {/* Logo Section */}
-        <div className="sm:w-[10%] w-[30%] h-full flex justify-center items-center">
+        <div className="sm:w-[10%] w-[40%] h-full flex justify-center items-center">
           <div className="sm:block hidden cursor-pointer">
             <h1 className="font-bold text-2xl">
               <span className="hover:text-red-500">B</span>
@@ -22,7 +22,7 @@ function Navbar() {
               <span className="hover:text-blue-500">A</span>
             </h1>
           </div>
-          <div className="sm:hidden block bg-yellow-300">
+          <div className="sm:hidden block">
             <NavLink to="/">
               <img className='sm:w-[60px] w-[50px]' src="/graduation-hat.png" alt="logo" />
             </NavLink>
