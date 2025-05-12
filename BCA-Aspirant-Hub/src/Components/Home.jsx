@@ -92,7 +92,7 @@ function Home() {
     </button>
   </a>
 
-  <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.instagram.com" target="_self" rel="noopener noreferrer">
     <button className="w-[40px] h-[40px] bg-pink-500 text-white rounded-full p-3 flex items-center justify-center">
       <i className="ri-instagram-fill text-2xl"></i>
     </button>
