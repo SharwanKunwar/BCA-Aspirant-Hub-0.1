@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import NavMenuToggle from "./NavMenuToggle";
 import { useEffect } from "react";
+import useReloadOnFocus from "../Hooks/useReloadOnFocus";
 
 function Navbar() {
   
@@ -18,6 +19,8 @@ function Navbar() {
   borderStyle: "solid",
   borderColor: "#ccc",
 };
+
+useReloadOnFocus();
 
   return (
     <div className="w-screen sm:h-[90px] h-[80px] flex justify-center items-center sm:pl-10 sm:pr-10 fixed sm:bg-white bg-gray-100 z-50">
