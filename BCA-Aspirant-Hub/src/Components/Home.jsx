@@ -3,6 +3,7 @@ import './Home.css'
 import TypingAnimatedText from "./TypingEffect";
 import { motion } from "framer-motion";
 import 'remixicon/fonts/remixicon.css';
+import useReloadOnFocus from "../Hooks/useReloadOnFocus";
 
 
 function Home() {
@@ -23,6 +24,8 @@ function Home() {
       },
     }),
   };
+
+  useReloadOnFocus();
 
   return (
     <div
