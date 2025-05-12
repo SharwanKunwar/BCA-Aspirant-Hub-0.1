@@ -23,7 +23,7 @@ const NavMenuToggle = () => {
   return (
     <div className="relative">
       <button
-        className="fixed top-5 right-4 z-50 p-2 bg-gray-800 text-white rounded-full sm:hidden"
+        className="fixed top-5 right-3 z-50 p-2 bg-gray-800 text-white rounded-full sm:hidden"
         onClick={toggleMenu}
         aria-label={isOpen ? "Close menu" : "Open menu"}
       >
