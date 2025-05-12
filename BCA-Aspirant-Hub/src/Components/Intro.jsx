@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router';
+import 'remixicon/fonts/remixicon.css';
+
 
 
 const Button = ({ variant, className, children }) => {
