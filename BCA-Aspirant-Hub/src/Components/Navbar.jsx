@@ -1,8 +1,18 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import NavMenuToggle from "./NavMenuToggle";
+import { useEffect } from "react";
 
 function Navbar() {
+  
+  useEffect(() => {
+    const isInAppBrowser = /FBAN|FBAV|Instagram/.test(navigator.userAgent);
+    if (isInAppBrowser) {
+      console.warn("You are using an in-app browser. Some assets may not load correctly.");
+    }
+  }, []);
+
+
   const style01 = {
   borderWidth: "0.5px",
   borderStyle: "solid",
