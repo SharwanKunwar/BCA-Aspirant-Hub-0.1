@@ -9,6 +9,7 @@ import Semister from './Home/Semister.jsx';
 import Intro from './Components/Intro.jsx';
 import Projects from './Home/Projects.jsx';
 import Blogs from './Home/Blogs.jsx';
+import AnimatedIntro from './Components/AnimatedIntro.jsx';
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
     children: [
       {
         path:'/',
-        element:<Intro/>
+        element:<AnimatedIntro/>
       },
       {
         path: 'home',  // Relative path, no leading /
