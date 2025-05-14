@@ -36,9 +36,9 @@ useReloadOnFocus();
             </h1>
           </div>
           <div className="sm:hidden block">
-            <NavLink to="home">
+            <a href="#home-outer">
               <img className='sm:w-[60px] w-[50px]' src="/graduation-hat.png" alt="logo" />
-            </NavLink>
+            </a>
           </div>
         </div>
 

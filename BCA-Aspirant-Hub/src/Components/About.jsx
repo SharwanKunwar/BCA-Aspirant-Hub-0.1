@@ -36,10 +36,13 @@ function About() {
           style={{
             backgroundImage:
               "linear-gradient(114.2deg, rgba(184,215,21,1) -15.3%, rgba(21,215,98,1) 14.5%, rgba(21,215,182,1) 38.7%, rgba(129,189,240,1) 58.8%, rgba(219,108,205,1) 77.3%, rgba(240,129,129,1) 88.5%)",
-          }}
-        >
-          <div id="about-outer"
-      ref={aboutRef} className="bg-black w-[98%] h-[98%] rounded-lg">img</div>
+          }}>
+          <div 
+          id="about-outer"
+          ref={aboutRef} 
+          className="bg-black w-[98%] h-[98%] rounded-lg">
+            img
+          </div>
         </motion.div>
       </motion.div>
 

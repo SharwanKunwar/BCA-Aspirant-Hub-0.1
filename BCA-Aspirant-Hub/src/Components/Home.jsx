@@ -1,9 +1,7 @@
-import React from "react";
 import './Home.css'
 import TypingAnimatedText from "./TypingEffect";
 import { motion } from "framer-motion";
 import 'remixicon/fonts/remixicon.css';
-import useReloadOnFocus from "../Hooks/useReloadOnFocus";
 
 
 function Home() {
@@ -25,7 +23,6 @@ function Home() {
     }),
   };
 
-  useReloadOnFocus();
 
   return (
     <div
@@ -82,25 +79,26 @@ function Home() {
       </div>
 
 
-      <section className=" w-[90%] sm:h-[40%] h-[20%] flex justify-center sm:items-center items-start gap-10 sm:hidden z-10">
-  <a href="https://www.facebook.com/messenger" target="_blank" rel="noopener noreferrer">
-    <button className="w-[40px] h-[40px] bg-blue-600 text-white rounded-full p-3 flex items-center justify-center">
-      <i className="ri-facebook-circle-fill text-2xl"></i>
-    </button>
-  </a>
+{/* social media links handle */}
+        <section className=" w-[90%] sm:h-[40%] h-[20%] flex justify-center sm:items-center items-start gap-10 sm:hidden z-10">
+          <a href="https://www.facebook.com/messenger" target="_blank" rel="noopener noreferrer">
+            <button className="w-[40px] h-[40px] bg-blue-600 text-white rounded-full p-3 flex items-center justify-center">
+              <i className="ri-facebook-circle-fill text-2xl"></i>
+            </button>
+          </a>
 
-  <a href="https://github.com/SharwanKunwar" target="_blank" rel="noopener noreferrer">
-    <button className="w-[40px] h-[40px] bg-gray-800 text-white rounded-full p-3 flex items-center justify-center">
-      <i className="ri-github-fill text-2xl"></i>
-    </button>
-  </a>
+          <a href="https://github.com/SharwanKunwar" target="_blank" rel="noopener noreferrer">
+            <button className="w-[40px] h-[40px] bg-gray-800 text-white rounded-full p-3 flex items-center justify-center">
+              <i className="ri-github-fill text-2xl"></i>
+            </button>
+          </a>
 
-  <a href="https://www.instagram.com" target="_self" rel="noopener noreferrer">
-    <button className="w-[40px] h-[40px] bg-pink-500 text-white rounded-full p-3 flex items-center justify-center">
-      <i className="ri-instagram-fill text-2xl"></i>
-    </button>
-  </a>
-</section>
+          <a href="https://www.instagram.com" target="_self" rel="noopener noreferrer">
+            <button className="w-[40px] h-[40px] bg-pink-500 text-white rounded-full p-3 flex items-center justify-center">
+              <i className="ri-instagram-fill text-2xl"></i>
+            </button>
+          </a>
+        </section>
 
 
 
