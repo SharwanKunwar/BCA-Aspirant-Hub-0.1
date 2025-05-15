@@ -56,4 +56,4 @@ src/
 
 
 ## 📸 Screenshot in windows
-![img](/src/assets/siteImg/win01.png)
+![img](src/assets/siteImg/win01.png)
