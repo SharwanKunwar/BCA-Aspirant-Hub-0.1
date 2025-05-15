@@ -52,8 +52,8 @@ src/
 ```
 
 ## 📸 Screenshot in phone
-![img](/src/assets/siteImg/phone01.png)
+![img](src/assets/siteImg/phone01.png)
 
 
 ## 📸 Screenshot in windows
-![img](/src/assets/siteImg/win01.png)
+![img](src/assets/siteImg/win01.png)
