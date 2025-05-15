@@ -52,7 +52,7 @@ src/
 ```
 
 ## 📸 Screenshot in phone
-![img](/src/assets/siteImg/phone01.png)
+![img](src/assets/siteImg/phone01.png)
 
 
 ## 📸 Screenshot in windows
