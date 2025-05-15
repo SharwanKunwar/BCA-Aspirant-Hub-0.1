@@ -35,7 +35,7 @@ function Notes() {
       </div>
 
       {/* Main Content */}
-      <div className="bg-blue-400 w-full h-screen">
+      <div className="bg-gray-50 w-full h-screen">
         <Outlet />
       </div>
     </>
