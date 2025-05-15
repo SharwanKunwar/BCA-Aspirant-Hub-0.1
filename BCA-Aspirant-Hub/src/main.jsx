@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';  // Correct import from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 import App from './App.jsx';
 import MainPage from './Home/MainPage.jsx';
@@ -10,6 +10,9 @@ import Intro from './Components/Intro.jsx';
 import Projects from './Home/Projects.jsx';
 import Blogs from './Home/Blogs.jsx';
 import AnimatedIntro from './Components/AnimatedIntro.jsx';
+import Sem01 from './SemComponents/Sem01.jsx';
+import Sem02 from './SemComponents/Sem02.jsx';
+import ErrorPage from './Components/ErrorPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -17,30 +20,41 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path:'/',
-        element:<AnimatedIntro/>
+        path: '/',
+        element: <AnimatedIntro />
       },
       {
-        path: 'home',  // Relative path, no leading /
+        path: 'home',
         element: <MainPage />
       },
       {
-        path: 'notes',  // Relative path, no leading /
-        element: <Notes />
+        path: 'notes',
+        element: <Notes />,  // Parent route for Notes
+        children: [
+          {
+            path: 'sem01',   // Nested route for Sem01
+            element: <Sem01 />
+          },
+          {
+            path: 'sem02',   // Nested route for Sem02
+            element: <Sem02 />
+          }
+        ],
       },
       {
-        path: 'semister',  // Relative path, no leading /
+        path: 'semister',
         element: <Semister />
       },
       {
         path: 'projects',
-        element: <Projects/>
+        element: <Projects />
       },
       {
         path: 'blogs',
-        element: <Blogs/>
-      }
-    ]
+        element: <Blogs />
+      },
+    ],
+    errorElement: <ErrorPage />,
   }
 ]);
 

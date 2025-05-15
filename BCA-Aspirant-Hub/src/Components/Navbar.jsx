@@ -45,7 +45,7 @@ useReloadOnFocus();
         {/* Menu List Section */}
         <div className="sm:w-[60%] w-[80%] h-full">
           <ul className=" sm:flex sm:justify-start sm:items-center sm:gap-10 w-full h-full hidden">
-            {["home", "notes", "semister","projects","blogs"].map((item) => (
+            {["home", "notes", "projects","blogs"].map((item) => (
               <li key={item} className="list-none">
                 <NavLink
                   to={item}

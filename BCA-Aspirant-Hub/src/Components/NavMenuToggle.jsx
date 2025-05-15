@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
 const NavMenuToggle = () => {
-  const list = ["home", "notes", "semister", "projects", "blogs"];
+  const list = ["home", "notes","projects", "blogs"];
   const [isOpen, setIsOpen] = useState(false);
   const [activeItem, setActiveItem] = useState(null);
 
