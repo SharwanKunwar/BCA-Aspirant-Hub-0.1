@@ -157,7 +157,7 @@ if (svgElement) {
               </div>
               <img
                 className="absolute character sm:h-[90%] -bottom-[150%] left-1/2 top-1/2.5 -translate-x-1/2  scale-[2] rotate-[-20deg]"
-                src="/IntroImages/girlbg.png"
+                src="/IntroImages/girl01.png"
                 alt=""
               />
             </div>

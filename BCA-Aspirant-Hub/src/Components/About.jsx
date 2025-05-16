@@ -41,7 +41,7 @@ function About() {
           id="about-outer"
           ref={aboutRef} 
           className="bg-white/30 backdrop-blur-md shadow-lg w-[98%] h-[98%] rounded-lg">
-            <img className="w-[100%] h-[100%] object-cover object-top" src="/IntroImages/girlbg.png" alt="" />
+            <img className="w-[100%] h-[100%] object-cover object-top" src="/IntroImages/girl01.png" alt="" />
           </div>
         </motion.div>
       </motion.div>
