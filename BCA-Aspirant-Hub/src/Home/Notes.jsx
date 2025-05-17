@@ -24,7 +24,8 @@ function Notes() {
     <>
       {/* Toggle Button */}
       <button
-        className="text-white bg-black w-full sm:h-[50px] h-[50px] flex justify-between pl-5 pr-5 items-center fixed sm:top-22 top-20 z-20 text-2xl font-bold"
+        className="text-black font-mono bg-white/30 backdrop-blur-lg border border-white/20 w-full sm:h-[50px] h-[50px] flex justify-between pl-5 pr-5 items-center fixed sm:top-22 top-20 z-20 text-2xl font-bold shadow-lg"
+
         onClick={toggleSidebar}
       >
         {isOpen ? "Sem List <" : "Sem List >"}
