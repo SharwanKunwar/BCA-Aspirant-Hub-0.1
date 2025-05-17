@@ -6,10 +6,10 @@ function Sem01() {
   const location = useLocation();
 
   // Check if the route is for the notes (e.g., `/notes/sem01/semister01-notes`)
-  const isNotesOpen = location.pathname.includes("semister01-notes");
+  const isNotesOpen = location.pathname.includes("semisterNotePdfViewer");
 
   return (
-    <div className="bg-gray-50 w-screen flex justify-center flex-wrap gap-10 pt-35 pb-10 sm:pt-40">
+    <div className=" w-screen  flex justify-center flex-wrap gap-10 pb-10 pt-33 sm:pt-40">
       {/* Conditionally render the Cards */}
       {!isNotesOpen && (
         <>
@@ -42,7 +42,7 @@ function Sem01() {
       )}
 
       {/* Outlet will render nested routes like Semister01Notes */}
-      <Outlet />
+        <Outlet />
     </div>
   );
 }

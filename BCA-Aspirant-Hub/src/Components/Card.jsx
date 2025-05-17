@@ -1,14 +1,23 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
+
 function Card({ title, des, id }) {
   const navigate = useNavigate();
 
   const handleClick = (target) => {
     switch (target) {
       case "cfa":
-        navigate("/notes/sem01/semister01-notes");
+        navigate(`/notes/sem01/semisterNotePdfViewer/${target}`);
         break;
+      case 'dl':
+        navigate(`/notes/sem01/semisterNotePdfViewer/${target}`);
+        break;
+        
+      // case 'eng':
+      //   navigate(`/notes/sem01/semisterNotePdfViewer/${target}`);
+      //   break;
+
       // You can add more cases for other IDs here.
       default:
         console.warn("Invalid target:", target); 

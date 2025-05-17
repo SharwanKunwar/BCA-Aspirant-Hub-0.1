@@ -12,7 +12,9 @@ import AnimatedIntro from "./Components/AnimatedIntro.jsx";
 import Sem01 from "./SemComponents/Sem01.jsx";
 import Sem02 from "./SemComponents/Sem02.jsx";
 import ErrorPage from "./Components/ErrorPage.jsx";
-import Semister01Notes from "./SemComponents/Notes/Semister01Notes.jsx";
+import CfaNote from "./SemComponents/Notes/CfaNote.jsx";
+import SemisterNotePdfViewer from "./SemComponents/Notes/SemisterNotePdfViewer.jsx";
+import DigitalLogic from "./SemComponents/Notes/DigitalLogic.jsx";
 
 const router = createBrowserRouter([
   {
@@ -37,9 +39,20 @@ const router = createBrowserRouter([
             element: <Sem01 />,
             children: [
               {
-                path: "semister01-notes",
-                element: <Semister01Notes />,
-              },
+                path: "semisterNotePdfViewer",
+                element: <SemisterNotePdfViewer/>,
+                children: [
+                  {
+                    path: "cfa",
+                    element: <CfaNote/>
+                  },
+                  {
+                    path: "dl",
+                    element: <DigitalLogic/>
+                  }
+                  
+                ]
+              }
             ],
           },
           {

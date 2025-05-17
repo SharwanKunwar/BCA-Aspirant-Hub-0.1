@@ -10,7 +10,7 @@ const SEMESTERS = [
 
 function Notes() {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedSem, setSelectedSem] = useState("| Semester |"); // Default to "First Semester"
+  const [selectedSem, setSelectedSem] = useState("| Semester |");
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
@@ -48,7 +48,7 @@ function Notes() {
       </div>
 
       {/* Main Content */}
-      <div className="bg-gray-50 w-full h-screen">
+      <div className="bg-gray-50 w-full">
         <Outlet />
       </div>
     </>
