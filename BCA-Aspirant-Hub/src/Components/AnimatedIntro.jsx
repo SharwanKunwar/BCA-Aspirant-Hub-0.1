@@ -3,7 +3,6 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Link } from "react-router";
 import "remixicon/fonts/remixicon.css";
-import { link } from "framer-motion/client";
 
 
 function AnimatedIntro() {

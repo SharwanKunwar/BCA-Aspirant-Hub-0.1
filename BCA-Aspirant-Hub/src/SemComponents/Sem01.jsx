@@ -9,7 +9,7 @@ function Sem01() {
   const isNotesOpen = location.pathname.includes("semisterNotePdfViewer");
 
   return (
-    <div className=" w-screen  flex justify-center flex-wrap gap-10 pb-10 pt-33 sm:pt-40">
+    <div className=" w-screen flex justify-center flex-wrap gap-10 pb-10 pt-33 sm:pt-40">
       {/* Conditionally render the Cards */}
       {!isNotesOpen && (
         <>
