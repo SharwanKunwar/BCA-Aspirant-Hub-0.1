@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 
-function Card({ title, des, id }) {
+function Card({img, title, des, id }) {
   const navigate = useNavigate();
 
   const handleClick = (target) => {
@@ -28,7 +28,7 @@ function Card({ title, des, id }) {
     <div className="bg-blue-400/30 backdrop-blur-lg border border-white/20 w-[350px] h-[520px] rounded-lg shadow-lg p-5 sm:m-1 m-5 flex flex-col gap-5">
       {/* Image Container */}
       <div className="w-full h-[60%] rounded-2xl shadow-md flex justify-center items-center">
-        img
+        <img className="w-full h-full object-cover rounded-md " src={img} alt="img" />
       </div>
 
       {/* Title and Description */}

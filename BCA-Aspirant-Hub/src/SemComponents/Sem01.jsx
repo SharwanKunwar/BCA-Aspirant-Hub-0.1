@@ -14,26 +14,31 @@ function Sem01() {
       {!isNotesOpen && (
         <>
           <Card
+            img={"/BookImg/cfaBookImg.jpg"}
             title={"CFA"}
             des={"Learn computer basics, hardware, software, and applications."}
             id={"cfa"}
           />
           <Card
+          img={"/BookImg/digitalLogicBookImg.jpg"}
             title={"Digital Logic"}
             des={"Explore logic gates, circuits, and binary systems."}
             id={"dl"}
           />
           <Card
+          img={"/BookImg/englsih.jpg"}
             title={"English"}
             des={"Enhance communication, grammar, and composition skills."}
             id={"eng"}
           />
           <Card
+          img={"/BookImg/sociology.jpg"}
             title={"Sociology"}
             des={"Understand social structures, relationships, and culture."}
             id={"social"}
           />
           <Card
+          img={"/BookImg/math.jpg"}
             title={"Math"}
             des={"Master matrices, calculus, and other key topics."}
             id={"math"}
