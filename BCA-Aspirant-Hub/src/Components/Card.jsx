@@ -5,6 +5,13 @@ import { useNavigate } from "react-router-dom";
 function Card({img, title, des, id }) {
   const navigate = useNavigate();
 
+  const bookHandler = (target) =>{
+    switch(target){
+      case "math":
+        navigate(`/notes/sem02/semBookViewer/${target}`);
+    }
+  }
+
   const handleClick = (target) => {
     switch (target) {
       case "cfa":
@@ -41,6 +48,7 @@ function Card({img, title, des, id }) {
       <div className="w-full h-[8%] flex justify-around items-start">
         <button
           id={id}
+          onClick={()=>bookHandler(id)}
           className="bg-blue-700 text-white w-6/14 h-full sm:w-6/14 sm:h-[95%] rounded-md shadow-md"
         >
           Book PDF

@@ -15,6 +15,8 @@ import ErrorPage from "./Components/ErrorPage.jsx";
 import CfaNote from "./SemComponents/Notes/CfaNote.jsx";
 import SemisterNotePdfViewer from "./SemComponents/Notes/SemisterNotePdfViewer.jsx";
 import DigitalLogic from "./SemComponents/Notes/DigitalLogic.jsx";
+import SemBookViewer from "./SemComponents/Books/SemBookViewer.jsx";
+import Math from "./SemComponents/Books/Math.jsx";
 
 const router = createBrowserRouter([
   {
@@ -58,6 +60,18 @@ const router = createBrowserRouter([
           {
             path: "sem02",
             element: <Sem02 />,
+            children: [
+              {
+                path: 'semBookViewer',
+                element: <SemBookViewer/>,
+                children:[
+                  {
+                    path: "math",
+                    element: <Math/>
+                  }
+                ]
+              }
+            ]
           },
         ],
       },
