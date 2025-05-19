@@ -57,3 +57,19 @@ src/
 
 ## 📸 Screenshot in windows
 ![img](src/assets/siteImg/win01.png)
+
+# Notes section | page
+
+## sem01
+
+* Notes pdf
+    - cfa
+    - dl
+* Books pdf
+    - not yet
+
+## sem02
+* Notes pdf
+    - not yet
+* Books pdf
+    - math
