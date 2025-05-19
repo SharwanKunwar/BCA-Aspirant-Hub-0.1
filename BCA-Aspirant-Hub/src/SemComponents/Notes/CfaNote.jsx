@@ -16,12 +16,12 @@ function CfaNote() {
   };
 
   return (
-    <div className="bg-sky-300 w-screen h-screen flex flex-col justify-start items-center p-5 gap-10 text-black">
+    <div className="bg-sky-300 w-screen h-screen flex flex-col justify-start items-center p-0 gap-10 text-black">
       <div className="w-full flex justify-center items-center mt-10">
         <div className="w-[90%] m-10 flex justify-center">
-          <div className="bg-white sm:h-[500px] w-[300px] p-5 rounded-2xl flex flex-col justify-center items-center gap-5 shadow-md">
+          <div className="bg-white sm:h-[500px] w-[300px] p-3 rounded-2xl flex flex-col justify-center items-center gap-5 shadow-md">
             <img
-              className="w-full h-[200px] object-cover rounded-md"
+              className="w-full h-[350px] object-cover"
               src="/BookImg/cfa.jpg"
               alt="img"
             />
@@ -45,7 +45,7 @@ function CfaNote() {
         <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
           <div
             id="pd"
-            className="w-full  h-[600px] bg-white rounded-md p-5 shadow-md overflow-y-auto"
+            className="sm:w-full w-full sm:h-[600px] h-[700px] bg-white rounded-md p-5 shadow-md overflow-y-auto"
           >
             <Viewer fileUrl={cfaPdfUrl} />
           </div>
