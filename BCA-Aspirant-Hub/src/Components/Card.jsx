@@ -1,33 +1,27 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
-
-function Card({img, title, des, id }) {
-  const navigate = useNavigate();
-
-  const bookHandler = (target) =>{
-    switch(target){
-      case "math":
-        navigate(`/notes/sem02/semBookViewer/${target}`);
+function Card({ img, title, des, id, bookLink, noteLink }) {
+  const bookHandler = (bookLink) => {
+    const confirmed = window.confirm("Are you sure you want to download this book?");
+    if (confirmed) {
+      const link = document.createElement("a");
+      link.href = `/books/${bookLink}.pdf`;
+      link.download = `${title}-book.pdf`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     }
-  }
+  };
 
-  const handleClick = (target) => {
-    switch (target) {
-      case "cfa":
-        navigate(`/notes/sem01/semisterNotePdfViewer/${target}`);
-        break;
-      case 'dl':
-        navigate(`/notes/sem01/semisterNotePdfViewer/${target}`);
-        break;
-        
-      // case 'eng':
-      //   navigate(`/notes/sem01/semisterNotePdfViewer/${target}`);
-      //   break;
-
-      // You can add more cases for other IDs here.
-      default:
-        console.warn("Invalid target:", target); 
+  const handleClick = (noteLink) => {
+    const confirmed = window.confirm("Are you sure you want to download this note?");
+    if (confirmed) {
+      const link = document.createElement("a");
+      link.href = `/notes/${noteLink}.pdf`;
+      link.download = `${title}-note.pdf`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     }
   };
 
@@ -47,18 +41,17 @@ function Card({img, title, des, id }) {
       {/* Action Buttons */}
       <div className="w-full h-[8%] flex justify-around items-start">
         <button
-          id={id}
-          onClick={()=>bookHandler(id)}
+          onClick={() => bookHandler(bookLink)}
           className="bg-blue-700 text-white w-6/14 h-full sm:w-6/14 sm:h-[95%] rounded-md shadow-md"
         >
-          Book PDF
+          Download Book
         </button>
 
         <button
-          onClick={() => handleClick(id)}
+          onClick={() => handleClick(noteLink)}
           className="bg-blue-700 text-white w-6/14 h-full sm:w-6/14 sm:h-[95%] rounded-md shadow-md"
         >
-          Note PDF
+          Download Note
         </button>
       </div>
     </div>

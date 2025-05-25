@@ -1,54 +1,64 @@
-import React from 'react'
-import Sem01 from './Sem01'
+import React from 'react';
 import { Outlet, useLocation } from "react-router-dom";
-import Card from '../Components/Card'
-
+import Card from '../Components/Card';
 
 function Sem02() {
   const location = useLocation();
   const isNotesOpen = location.pathname.includes("semBookViewer");
+
   return (
-    <div className=" w-screen flex justify-center flex-wrap gap-10 pb-10 pt-33 sm:pt-40">
+    <div className="w-screen flex justify-center flex-wrap gap-10 pb-10 pt-33 sm:pt-40">
       {/* Conditionally render the Cards */}
       {!isNotesOpen && (
         <>
           <Card
             img={"/BookImg/cfaBookImg.jpg"}
-            title={"C programming"}
-            des={"Learn computer basics, hardware, software, and applications."}
+            title={"C Programming"}
+            des={"Learn C fundamentals, data types, and control structures."}
             id={"c"}
+            bookLink={"c_programming_book"}
+            noteLink={"sem02C_Note"} // this is demo add same like this in feture
           />
+
           <Card
-          img={"/BookImg/digitalLogicBookImg.jpg"}
+            img={"/BookImg/digitalLogicBookImg.jpg"}
             title={"Microprocessor"}
-            des={"Explore logic gates, circuits, and binary systems."}
+            des={"Explore processors, architecture, and instructions."}
             id={"micro"}
+            bookLink={"microprocessor_book"}
+            noteLink={"microprocessor_note"}
           />
+
           <Card
-          img={"/BookImg/englsih.jpg"}
+            img={"/BookImg/englsih.jpg"}
             title={"English"}
             des={"Enhance communication, grammar, and composition skills."}
             id={"eng"}
+            bookLink={"english_book"}
+            noteLink={"english_note"}
           />
+
           <Card
-          img={"/BookImg/sociology.jpg"}
+            img={"/BookImg/sociology.jpg"}
             title={"Account"}
-            des={"Understand social structures, relationships, and culture."}
+            des={"Understand accounting principles and financial systems."}
             id={"ac"}
+            bookLink={"account_book"}
+            noteLink={"account_note"}
           />
+
           <Card
-          img={"/BookImg/math.jpg"}
+            img={"/BookImg/math.jpg"}
             title={"Math"}
             des={"Master matrices, calculus, and other key topics."}
             id={"math"}
+            bookLink={"sem02Math"}    // this is sample add same like this in f.....
+            noteLink={"mathNote"}  
           />
         </>
       )}
-
-      {/* Outlet will render nested routes like Semister01Notes */}
-        <Outlet />
     </div>
-  )
+  );
 }
 
-export default Sem02
+export default Sem02;
