@@ -12,7 +12,7 @@ function Sem02() {
       {!isNotesOpen && (
         <>
           <Card
-            img={"/BookImg/cfaBookImg.jpg"}
+            img={"/BookImg/cfaBookImgs.jpg"}
             title={"C Programming"}
             des={"Learn C fundamentals, data types, and control structures."}
             id={"c"}
@@ -21,7 +21,7 @@ function Sem02() {
           />
 
           <Card
-            img={"/BookImg/digitalLogicBookImg.jpg"}
+            img={"/BookImg/microprocessor.jpg"}
             title={"Microprocessor"}
             des={"Explore processors, architecture, and instructions."}
             id={"micro"}
@@ -30,11 +30,11 @@ function Sem02() {
           />
 
           <Card
-            img={"/BookImg/englsih.jpg"}
+            img={"/BookImg/sem02EnglishBook.png"}
             title={"English"}
             des={"Enhance communication, grammar, and composition skills."}
             id={"eng"}
-            bookLink={"english_book"}
+            bookLink={"sem02EnglishBook"}
             noteLink={"english_note"}
           />
 
